@@ -1,0 +1,55 @@
+.explore-canteens{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.explore-canteens h1{
+    color: #262626;
+    font-weight: 500;
+}
+.explore-canteens-text{
+    max-width: 100%;
+   
+}
+.explore-menu-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    text-align: center;
+    margin: 20px 0px;
+    overflow-x: scroll;
+}
+.explore-menu-list::-webkit-scrollbar{
+    display: none;
+}
+.explore-menu-list img{
+    width: 7.5vw;
+    min-width: 80px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+.explore-menu-list p{
+    margin-top: 10px;
+    color: tomato;
+    font-size: max(1vw, 16px);
+    cursor: pointer;   
+}
+.explore-canteens hr {
+    width: 100%; 
+    height: 2px;
+    background-color: #e2e2e2;
+    border: none;
+    margin: 20px 0; 
+}
+.explore-menu-list-item img.active {
+    border: 4px solid tomato;
+    padding: 2px;
+    transition: 0.2s ease-in-out;
+  }
+    .explore-menu-list-item img:hover {
+        border: 4px solid tomato;
+        padding: 2px;
+        transition: 0.2s ease-in-out;
+    }  

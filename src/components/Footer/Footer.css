@@ -1,0 +1,38 @@
+.footer {
+    background-color: #f8f8f8;
+    color: #333;
+    text-align: center;
+    padding: 15px 0;
+    border-top: 2px solid #d43f3f;
+    font-size: 14px;
+    font-family: outfit;
+
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    font-family: outfit;
+
+    align-items: center;
+  }
+  
+  .footer-links {
+    font-family: outfit;
+
+    margin-top: 8px;
+  }
+  
+  .footer-links a {
+    color: #d43f3f;
+    text-decoration: none;
+    font-family: outfit;
+
+    margin: 0 10px;
+    font-weight: 500;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
