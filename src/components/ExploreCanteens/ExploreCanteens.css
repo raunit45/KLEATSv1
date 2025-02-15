@@ -3,6 +3,10 @@
     flex-direction: column;
     gap: 20px;
 }
+html {
+    scroll-behavior: smooth;
+  }
+  
 .explore-canteens h1{
     color: #262626;
     font-weight: 500;

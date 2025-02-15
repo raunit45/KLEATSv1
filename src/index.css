@@ -7,6 +7,7 @@
 }
 body{
   min-height:100vh;
+  overflow-x: hidden;
 }
 a{
   text-decoration: none;
@@ -24,4 +25,14 @@ a{
   100%{
     opacity: 1;
   }
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* Adjust this value based on your navbar height */
+}
+
+/* Add these styles to ensure sections are visible */
+#members-section, #footer {
+  scroll-margin-top: 80px; /* Same as scroll-padding-top */
 }
