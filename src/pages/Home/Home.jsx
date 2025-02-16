@@ -11,9 +11,9 @@ const Home = () => {
     <div className="home" id="home">
       <div className="hero-section">
         <div className="hero-content">
-          <h1>Welcome to Kleats</h1>
-          <p>Discover the Perfect Cleats for Your Game</p>
-          <button className="shop-now-btn">Shop Now</button>
+          <h1>Welcome to Kl-eats</h1>
+          <p>Discover the Perfect KL-eats for Your Game</p>
+          <button className="shop-now-btn">Explore Canteens</button>
         </div>
       </div>
 

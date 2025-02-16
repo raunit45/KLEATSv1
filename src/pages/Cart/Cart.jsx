@@ -58,15 +58,15 @@ const Cart = () => {
           <h3>Order Summary</h3>
           <div className="summary-row">
             <span>Subtotal</span>
-            <span>${subtotal.toFixed(2)}</span>
+            <span>₹{subtotal.toFixed(2)}</span>
           </div>
           <div className="summary-row">
             <span>Shipping</span>
-            <span>${shipping.toFixed(2)}</span>
+            <span>₹{shipping.toFixed(2)}</span>
           </div>
           <div className="summary-row total">
             <span>Total</span>
-            <span>${total.toFixed(2)}</span>
+            <span>₹{total.toFixed(2)}</span>
           </div>
           <button 
             className="checkout-btn"
