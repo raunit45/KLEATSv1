@@ -1,6 +1,12 @@
 import React from 'react'
 import './Header.css'
 const Header = () => {
+  const scrollToHome = () => {
+    const homeSection = document.getElementById('home');
+    if (homeSection) {
+      homeSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
   return (
     <div className='header'>
         <div className="header-contents">

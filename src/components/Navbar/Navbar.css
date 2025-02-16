@@ -48,7 +48,27 @@
 .navbar-right {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 24px;
+}
+
+/* Sign In Link */
+.signin-link {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 2px solid #c63838;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.signin-link:hover {
+    background-color: #c63838;
+    color: white;
+    transform: scale(1.05);
 }
 
 /* Cart Icon */
@@ -70,22 +90,6 @@
     top: -5px;
     right: -5px;
     border: 2px solid white;
-}
-
-/* Sign In Button */
-.navbar button {
-    background: transparent;
-    font-size: 18px;
-    border: 1px solid tomato;
-    padding: 10px 30px;
-    border-radius: 50px;
-    cursor: pointer;
-    color: #49557e;
-    transition: 0.3s;
-}
-
-.navbar button:hover {
-    background-color: aliceblue;
 }
 
 /* Mobile Menu Toggle */
@@ -126,4 +130,42 @@
     .navbar-toggle {
         display: block;
     }
+}
+
+.cart-icon-container {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #49557e;
+    transition: transform 0.3s ease;
+}
+
+.cart-icon-container:hover {
+    transform: scale(1.1);
+}
+
+.cart-icon {
+    width: 24px;
+    height: 24px;
+    transition: opacity 0.3s ease;
+}
+
+.cart-icon-container:hover .cart-icon {
+    color:#c63838;
+    opacity: 0.8;
+}
+
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background:#c63838;
+    color:#c63838;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    min-width: 16px;
+    text-align: center;
 }

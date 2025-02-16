@@ -3,6 +3,14 @@ import './ExploreCanteens.css';
 import { menu_list } from '../../assets/assets';
 
 const ExploreCanteens = ({ category, setCategory }) => {
+  const handleCategoryClick = (menuName) => {
+    setCategory(prev => (prev === menuName ? "All" : menuName));
+
+    const menuSection = document.getElementById('menu-section');
+    if (menuSection) {
+      menuSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
   return (
     <div className="explore-canteens" id="explore-canteens">
       <h1>Explore Canteens</h1>

@@ -1,40 +1,74 @@
-.explore-canteens{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.explore-canteens {
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #fff 0%, #f8f8f8 100%);
 }
-.explore-canteens h1{
+
+.explore-canteens h1 {
+    font-size: 2.5rem;
     color: #262626;
-    font-weight: 500;
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
 }
+
+.explore-canteens h1::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: #c63838;
+    border-radius: 2px;
+}
+
 .explore-canteens-text{
     max-width: 100%;
    
 }
-.explore-menu-list{
+.explore-menu-list {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 60px;
+    justify-content: flex-start;
+    gap: 40px;
+    padding: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+.explore-menu-list::-webkit-scrollbar {
+    height: 8px;
+}
+.explore-menu-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+.explore-menu-list::-webkit-scrollbar-thumb {
+    background: #c63838;
+    border-radius: 4px;
+}
+.explore-menu-list-item {
+    flex: 0 0 auto;
     text-align: center;
-    margin: 20px 0px;
-    overflow-x: scroll;
+    transition: all 0.3s ease;
 }
-.explore-menu-list::-webkit-scrollbar{
-    display: none;
-}
-.explore-menu-list img{
-    width: 7.5vw;
-    min-width: 80px;
-    cursor: pointer;
+.explore-menu-list-item img {
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
-    transition: 0.2s;
+    object-fit: cover;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
-.explore-menu-list p{
-    margin-top: 10px;
-    color: tomato;
-    font-size: max(1vw, 16px);
-    cursor: pointer;   
+.explore-menu-list-item:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+.explore-menu-list-item p {
+    margin-top: 12px;
+    color: #c63838;
+    font-weight: 500;
+    font-size: 1.1rem;
 }
 .explore-canteens hr {
     width: 100%; 
